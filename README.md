@@ -6,7 +6,7 @@ Die Rohdaten liegen im Ordner [`rohdaten`](rohdaten), falls jemand selbst weiter
 
 ## Dateien
 
-Alles zusammen zum Herunterladen: [islandking_guide.zip](islandking_guide.zip)
+Alles zusammen herunterladen: oben auf GitHub «Code» → «Download ZIP».
 
 
 | Datei | Inhalt |
