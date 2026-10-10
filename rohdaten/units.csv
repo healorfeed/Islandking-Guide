@@ -1,0 +1,22 @@
+category,unit,attack,hp,speed_per_h,cargo,troop_slots,wood,stone,gold,coal,crowns,build_time_techtree,build_time_shown,phase,requirements,source
+ship,Small Freighter,0,50,33,510,0,6500,150,4100,600,0,1h 8m,1h 4m 47s,sea,none,shipyard+tech-tree; cargo 510 = 300 base +70% (Trade 14)
+ship,Large Freighter,0,150,22,2550,0,24000,500,12000,1800,0,3h 24m,3h 14m 20s,sea,Ship Class: Transport 10,shipyard+tech-tree; cargo 2550 = 1500 base +70%
+ship,Colony Ship,10,150,25,0,0,30000,10000,15000,1500,0,5h 40m,5h 23m 52s,sea,Library 10 + Colonisation 5 + Transport 10,shipyard+tech-tree
+ship,Light Galley,40,60,40,0,0,9000,300,5000,60,0,1h 30m,1h 26m 22s,sea,Ship Class: Warship 10,shipyard+tech-tree
+ship,Heavy Galley,200,500,35,0,0,40000,500,15600,500,0,5h 3m,4h 47m 53s,sea,Ship Class: Warship 20,shipyard+tech-tree
+ship,Frigate,650,7000,45,34,500,120000,30000,50000,11000,350,1d 4h,26h 52m 8s,sea,Harbour 10 + Trade 20 + Warship 25,shipyard+tech-tree; crowns from rules page
+ship,Battleship,4000,5000,30,0,0,200000,80000,80000,15000,500,1d 7h,29h 59m 15s,sea,Warship 25 + Royal Attack 5,shipyard+tech-tree; crowns from rules page
+ship,Old Pirate Ship,10,200,25,170,0,9000,300,5000,60,0,1h 30m,1h 26m 22s,sea,Pirate Hideout 1 (conquered pirate fortress),shipyard+tech-tree
+ship,Pirate Ship,120,800,25,170,0,70000,500,17000,450,0,2h 31m,2h 23m 57s,sea,Pirate Hideout 1,shipyard+tech-tree
+soldier,Simple Soldier,3,2,,,,50,0,150,5,0,0m,54s,land,none,barracks+tech-tree
+soldier,Swordsman,3,5,,,,20,0,200,8,0,2m,2m 42s,land,Combat Tech 5 + Defence Tech 8,barracks+tech-tree
+soldier,Musketeer,14,6,,,,500,20,2000,60,0,9m,8m 58s,land,Combat Tech 15 + Defence Tech 12,barracks+tech-tree
+soldier,Cannoneer,40,1,,,,500,50,1500,150,0,27m,26m 52s,land,Combat Tech 40 + Defence Tech 12 + Writing 35,barracks+tech-tree
+soldier,Knight,12,21,,,,2000,100,8000,250,1,18m,17m 55s,land,Combat Tech 40 + Defence Tech 20 + Writing 35,barracks+tech-tree; crowns from rules page
+installation,Watchtower,30,150,,,,1500,3000,1500,300,0,27m,27m 17s,sea+land,Castle 1 + Defence Tech 1,fortress+tech-tree
+installation,Catapult,250,600,,,,12000,8000,9000,1200,0,1h 49m,,land,Castle 5 + Combat Tech 12,tech-tree (stats from description)
+installation,Coastal gun,800,1200,,,,12000,26000,30000,4500,0,3h 38m,,sea,Castle 10 + Combat Tech 12,tech-tree (stats from description)
+installation,Cannon tower,1600,4500,,,,45000,100000,60000,15000,2,10h 54m,,sea+land,Castle 15 + Combat Tech 45 + Defence Tech 45,tech-tree; crowns from rules page
+installation,Water blockade,200,6000,,,,90000,90000,30000,1500,2,10h 54m,,sea,Royal Defence 10 + Royal Attack 10,tech-tree; blocks landing+loot while one survives
+defence_building,City Wall,0,30000,,,,450000,500000,300000,0,0,1d 21h,38h 38m 11s,land,none,tech-tree+island page; max level 1
+defence_building,Wall Cannons,20000,,,,,400000,500000,1000000,0,0,1d 1h,,land,City Wall 1 + Royal Attack 8 + Royal Defence 8,tech-tree; HP not shown (old forum value 100)

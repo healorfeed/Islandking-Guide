@@ -1,0 +1,43 @@
+{
+  "_source": "https://islandking.ch/rules (live values from server), crawled 2026-10-10",
+  "economy": {
+    "resource_production_multiplier": 1.3,
+    "game_speed_divisor": 1.1,
+    "research_lab_time_reduction_per_level": 0.02, "research_lab_max_reduction": 0.30,
+    "barracks_training_time_reduction_per_level": 0.015, "barracks_max_reduction_at_lvl20": 0.30,
+    "shipyard_build_time_reduction_per_level": 0.01, "shipyard_max_lvl": 35,
+    "market_offers_per_player": 5,
+    "coal_plant_coal_per_level_per_hour": 2,
+    "transporter_class_speed_bonus_per_level_above_10": 0.01,
+    "crowns": {"gold_per_crown": 200, "coal_per_crown": 70, "seconds_per_crown_before_speed": 173, "mint_lvl2_speed": "2x", "max_per_order": 2000,
+      "crown_prices": {"battleship": 500, "frigate": 350, "gaia_upgrade_per_level": 250, "terraforming_per_level": 50, "courthouse_per_level": 50, "thermal_plant": 25, "shop": 15, "bank_per_level": 5, "tech_centre_per_level": 5, "water_plant_per_level": 5, "slave_plant_per_level": 5, "ox_plant_per_level": 5, "wealth_per_level": 5, "cannon_tower": 2, "water_blockade": 2, "knight": 1},
+      "cancel_refund": 0.9, "notes": "no protected base amount; attacker takes crowns first; diamonds cannot buy crowns"}
+  },
+  "combat": {
+    "max_rounds": 6, "tie_rule": "defender wins if both sides remain after 6 rounds",
+    "salvage_after_battle": 0.40, "salvage_note": "40% of destroyed ships recoverable as wrecks, 40% of dead soldiers wounded to hospital",
+    "bashing_protection_min_points_ratio": 0.2,
+    "protected_base_hours_of_production": 8, "protected_base_min_per_resource": 500,
+    "plunder_lock_per_island_h": 24,
+    "courthouse_spy_catch_per_level": 0.04, "courthouse_catch_cap": 0.90,
+    "home_island_protection_max_islands": 3,
+    "battle_phases": ["sea: ships vs ships in port + sea installations (coastal gun, water blockade, watchtower, cannon tower)", "landing (only with troops): soldiers+ships vs soldiers, land installations (catapult, watchtower, cannon tower), city wall; no landing while defending ships float or water blockade stands"],
+    "harbour_plunder_cargo_share_without_land_win": 0.25,
+    "ship_bombardment_attack_share_in_landing": 0.75,
+    "conquest_garrison": "1 soldier per building level of island, min 50; needs land victory + surviving colony ship",
+    "retreat_threshold_hp_lost_in_phase": 0.90,
+    "new_colony_start_defence": {"watchtower": 20, "coastal_gun": 3},
+    "marksmanship": {"base": 0.60, "standard_attack_per_level": 0.01, "advanced_attack_per_level": 0.02, "royal_attack_per_level": 0.05, "all_researched": 1.00, "per_round_variance_pp": 10, "applies_to": "attacker and defender"},
+    "fortification": {"standard_defence_per_level": 0.01, "advanced_defence_per_level": 0.02, "royal_defence_per_level": 0.05, "all_researched": 0.80, "applies_to": "defender installations + defence buildings HP only; ships/soldiers unchanged"},
+    "shipyard_layup_per_level": 10, "layup_ready_time_min": 30,
+    "debris_field": "if >=5 ships sink in front of island: 6h (extendable to 24h); later-departing foreign attack fleets turn back",
+    "building_bombardment": "after land victory 10% of remaining force hits buildings; building level HP = construction cost/100; max 1 lvl/building, 3/attack, 6/island/24h; main house, settlements, defensive buildings exempt",
+    "fleet_boarding": "needs Warship lvl 10 + soldiers; 50% of surviving harbour ships captured (most valuable first), prize crew >= troop slots (min 5); prize 25% damage"
+  },
+  "pirates": {"attack_hours": "8-20 local", "lock_per_island_h": 72, "loot_share": "0-20%", "convoy_cargo": "5-10% of ship value, min 2000-10000, strongest ~90k-190k", "boarding_capture": 0.5, "boarding_wreck_salvage": 0.25, "colony_wreck_chance": 0.3},
+  "alliance": {"max_members": 28, "bank_deposit_fee": 0.10, "bank_size_per_member": 25000, "stationed_guests_max_share_of_host_score": 1.0, "resources_per_point_for_guest_cap": 2000},
+  "shields": {"vacation_days": "2-60", "vacation_production": 0.15, "vacation_cooldown_days": 7, "ghost_mode": "Gold 8h (cooldown 16h), Platinum 12h (cooldown 4h)"},
+  "points": {"per_island": 10, "per_building_level": 2, "per_research_level": 3, "per_ship_or_soldier": 1, "note": "every level counts the same regardless of building"},
+  "cargo": {"trade_research_cargo_per_level": 0.05, "frigate_troop_slots": 500, "trade_requires": "Transport ship class 5", "colony_ship_requires": "Transport 10"},
+  "diamonds": {"halve_remaining_time": "1 diamond per started 30 min saved, once per order", "military_speedup": false, "second_queue": "main house 10 / research lab 10", "top_up_resources_per_diamond": 1500, "instant_repair_cost": "50% of top-up price"}
+}

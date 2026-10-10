@@ -1,0 +1,13 @@
+resource,building,level,raw_per_h,source
+wood,Sawmill,28,2061,island page
+wood,Sawmill,29,2473,island page (next level preview)
+wood,Sawmill,34,6153,island page
+stone,Quarry,29,2473,island page
+stone,Quarry,30,2968,island page (next level preview)
+stone,Quarry,34,6153,island page
+gold,Gold Mine,26,1336,island page
+gold,Gold Mine,27,1603,island page (next level preview)
+gold,Gold Mine,34,5743,island page
+coal,Coal Mine,1,8,island page (next level preview from 0)
+coal,Coal Mine,5,17,island page
+coal,Coal Mine,6,20,island page (next level preview)

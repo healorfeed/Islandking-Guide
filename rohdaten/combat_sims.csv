@@ -1,0 +1,43 @@
+scenario,hit_rate_att,hit_rate_def,fortification,attacker,att_count,defender,def_count,result_header,rounds,att_before,att_after,def_before,def_after,notes
+ships_10M,60,60,0,Battleship,27,Frigate,47,Defender holds,6,27,15,47,5,role-symmetric: F attacking BS gives mirrored result
+ships_10M,60,60,0,Battleship,27,Heavy Galley,177,Defender holds,2,27,22,177,0,header says 'holds' because no landing; sea cleared
+ships_10M,60,60,0,Battleship,27,Light Galley,696,Defender holds,1,27,24,696,0,
+ships_10M,60,60,0,Frigate,47,Heavy Galley,177,Defender holds,6,47,38,177,0,
+ships_10M,60,60,0,Frigate,47,Light Galley,696,Defender holds,3,47,43,696,0,
+ships_10M,60,60,0,Heavy Galley,177,Light Galley,696,Defender holds,3,177,125,696,0,
+ships_10M,100,100,0,Battleship,27,Frigate,47,Defender holds,5,27,13,47,0,
+ships_10M,100,100,0,Battleship,27,Heavy Galley,177,Defender holds,1,27,20,177,0,
+ships_10M,100,100,0,Battleship,27,Light Galley,696,Defender holds,1,27,22,696,0,
+ships_10M,100,100,0,Frigate,47,Heavy Galley,177,Defender holds,4,47,37,177,0,
+ships_10M,100,100,0,Frigate,47,Light Galley,696,Defender holds,2,47,42,696,0,
+ships_10M,100,100,0,Heavy Galley,177,Light Galley,696,Defender holds,2,177,113,696,0,
+ships_vs_install_10M,60,60,0,Battleship,27,Watchtower,1587,Defender holds,6,27,12,1587,0,
+ships_vs_install_10M,60,60,0,Battleship,27,Coastal gun,138,Defender holds,3,27,1,138,44,
+ships_vs_install_10M,60,60,0,Battleship,27,Cannon tower,45,Defender holds,6,27,3,45,4,
+ships_vs_install_10M,60,60,0,Battleship,27,Water blockade,47,Defender holds,5,27,24,47,0,
+ships_vs_install_10M,60,60,0,Frigate,47,Watchtower,1587,Defender holds,6,47,27,1587,992,
+ships_vs_install_10M,60,60,0,Frigate,47,Coastal gun,138,Defender holds,6,47,3,138,86,
+ships_vs_install_10M,60,60,0,Frigate,47,Cannon tower,45,Defender holds,6,47,17,45,28,
+ships_vs_install_10M,60,60,0,Frigate,47,Water blockade,47,Defender holds,6,47,43,47,30,
+ships_vs_install_10M,60,60,0,Light Galley,696,Watchtower,1587,Defender holds,2,696,0,1587,1441,
+ships_vs_install_10M,60,60,0,Light Galley,696,Coastal gun,138,Defender holds,1,696,0,138,125,
+ships_vs_install_10M,60,60,0,Light Galley,696,Cannon tower,45,Defender holds,1,696,0,45,42,
+ships_vs_install_10M,60,60,0,Light Galley,696,Water blockade,47,Defender holds,6,696,196,47,36,
+soldiers_1M,60,60,0,Simple Soldier,4878,Swordsman,4386,Defender holds,2,4879,0,4386,2288,attacker has +1 Small Freighter as carrier (calculator needs >=1 ship; troop capacity not enforced)
+soldiers_1M,60,60,0,Simple Soldier,4878,Musketeer,388,Attacker wins,1,4879,3258,388,0,+1 Small Freighter
+soldiers_1M,60,60,0,Simple Soldier,4878,Knight,97,Attacker wins,1,4879,4532,97,0,+1 Small Freighter
+soldiers_1M,60,60,0,Simple Soldier,4878,Cannoneer,455,Defender holds,1,4879,0,455,0,+1 Small Freighter; mutual annihilation -> defender holds
+soldiers_1M,60,60,0,Swordsman,4386,Musketeer,388,Attacker wins,1,4387,3737,388,0,+1 Small Freighter
+soldiers_1M,60,60,0,Swordsman,4386,Knight,97,Attacker wins,1,4387,4248,97,0,+1 Small Freighter
+soldiers_1M,60,60,0,Swordsman,4386,Cannoneer,455,Attacker wins,1,4387,2208,455,0,+1 Small Freighter
+soldiers_1M,60,60,0,Musketeer,388,Knight,97,Attacker wins,1,389,276,97,0,+1 Small Freighter
+soldiers_1M,60,60,0,Musketeer,388,Cannoneer,455,Defender holds,1,389,0,455,0,+1 Small Freighter; mutual annihilation
+soldiers_1M,60,60,0,Knight,97,Cannoneer,455,Defender holds,1,98,0,455,0,+1 Small Freighter; mutual annihilation
+probe,100,100,0,Battleship,1,Light Galley,100,Defender holds,2,1,0,100,0,4000 att vs 6000 HP pool: R1 kills 66 LG and BS takes 4000; R2 both die -> simple pooled damage model with persistent HP
+probe,100,100,0,Light Galley,50,Battleship+Small Freighter,1+100,Defender holds,1,50,0,101,81,2000 dmg split proportional to HP share (BS 5000 HP / 100 SF 5000 HP) -> 1000 to SF = 20 SF lost
+probe,100,100,0,Light Galley,125,Battleship+Small Freighter,1+100,Defender holds,2,125,0,101,28,
+mix_10M,60,60,0,Battleship+Frigate,17+17,Battleship,27,Defender holds,6,34,8,27,0,mixed fleet (~9.96M) beats pure battleships (~10.1M)
+mix_10M,60,60,0,Battleship,27,Battleship+Frigate,17+17,Defender holds,5,27,1,34,8,same in reverse roles
+mix_10M,60,60,0,Battleship+Frigate,13+24,Battleship,27,Defender holds,6,37,9,27,0,
+mix_10M,60,60,0,Battleship+Frigate,21+10,Battleship,27,Defender holds,5,31,6,27,0,
+mix_10M,60,60,0,Battleship+Frigate,17+17,Frigate,47,Defender holds,6,34,22,47,13,6-round cap: HP-heavy defender survives although clearly weaker

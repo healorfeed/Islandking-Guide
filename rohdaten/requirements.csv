@@ -1,0 +1,108 @@
+target,target_kind,requires,requires_kind,level,scope
+Research Lab,building,Town Hall,building,2,island
+Shipyard,building,Town Hall,building,7,island
+Shipyard,building,Harbour,building,2,island
+Harbour,building,Town Hall,building,6,island
+Castle,building,Town Hall,building,2,island
+Marketplace,building,Town Hall,building,3,island
+Marketplace,building,Research Lab,building,3,island
+Marketplace,building,Gold Mine,building,6,island
+Mint,building,Coal Mine,building,5,island
+Mint,building,Large Settlement,building,5,island
+Mint,building,Writing,research,35,account
+Gold Mine,building,Town Hall,building,2,island
+Coal Mine,building,Town Hall,building,5,island
+Coal Mine,building,Quarry,building,10,island
+Small Settlement,building,Town Hall,building,2,island
+Small Settlement,building,Settlement,research,1,account
+Medium Settlement,building,Small Settlement,building,6,island
+Medium Settlement,building,Settlement,research,5,account
+Large Settlement,building,Small Settlement,building,10,island
+Large Settlement,building,Medium Settlement,building,8,island
+Large Settlement,building,Settlement,research,13,account
+Library,building,Town Hall,building,5,island
+Library,building,Writing,research,4,account
+Administration,building,Small Settlement,building,1,island
+Administration,building,Town Hall,building,10,island
+Administration,building,Library,building,10,island
+Courthouse,building,Administration,building,5,island
+Courthouse,building,Marketplace,building,5,island
+Courthouse,building,Mint,building,2,island
+Watch Post,building,Harbour,building,5,island
+Watch Post,building,Defence Techniques,research,10,account
+Watch Post,building,Courthouse,building,1,island
+Coal Power Plant,building,Windmill,building,10,island
+Coal Power Plant,building,Coal Mine,building,12,island
+Water Power Plant,building,Windmill,building,10,island
+Slave Treadmill Plant,building,Windmill,building,15,island
+Ox Treadmill Plant,building,Windmill,building,15,island
+Geothermal Plant (Volcano),building,Windmill,building,15,island
+Bank,building,Courthouse,building,10,island
+Shop,building,Bank,building,1,island
+Barracks,building,Administration,building,5,island
+Barracks,building,Combat Techniques,research,5,account
+Technology Center,building,Bank,building,1,island
+Technology Center,building,Shop,building,1,island
+Wall Cannons,building,City Wall,building,1,island
+Wall Cannons,building,Royal Attack,research,8,account
+Wall Cannons,building,Royal Defence,research,8,account
+Grosslager,building,Large Settlement,building,3,island
+Gaia Upgrade,building,Terraforming,research,5,account
+Wealth,research,Bank,building,1,island
+Wealth,research,Shop,building,1,island
+Writing,research,Research Lab,building,5,island
+Combat Techniques,research,Gold Mine,building,5,island
+Combat Techniques,research,Sawmill,building,5,island
+Combat Techniques,research,Quarry,building,5,island
+Colonisation,research,Library,building,3,island
+Colonisation,research,Harbour,building,6,island
+Settlement,research,Research Lab,building,7,island
+Compass,research,Shipyard,building,5,island
+Sea Charts,research,Compass,research,5,account
+Trade,research,Small Settlement,building,4,island
+Trade,research,Ship Class: Transport,research,5,account
+Ship Class: Transport,research,Shipyard,building,1,island
+Ship Class: Warship,research,Shipyard,building,5,island
+Ship Class: Warship,research,Harbour,building,10,island
+Terraforming,research,Town Hall,building,18,island
+Defence Techniques,research,Town Hall,building,3,island
+Advanced Defence,research,Standard Defence,research,5,account
+Advanced Attack,research,Standard Attack,research,5,account
+Royal Defence,research,Advanced Defence,research,5,account
+Royal Defence,research,Advanced Attack,research,2,account
+Royal Defence,research,Technology Center,building,1,island
+Royal Attack,research,Advanced Attack,research,5,account
+Royal Attack,research,Advanced Defence,research,2,account
+Royal Attack,research,Technology Center,building,1,island
+Light Galley,ship,Ship Class: Warship,research,10,account
+Heavy Galley,ship,Ship Class: Warship,research,20,account
+Large Freighter,ship,Ship Class: Transport,research,10,account
+Colony Ship,ship,Library,building,10,island
+Colony Ship,ship,Colonisation,research,5,account
+Colony Ship,ship,Ship Class: Transport,research,10,account
+Frigate,ship,Harbour,building,10,island
+Frigate,ship,Trade,research,20,account
+Frigate,ship,Ship Class: Warship,research,25,account
+Battleship,ship,Ship Class: Warship,research,25,account
+Battleship,ship,Royal Attack,research,5,account
+Swordsman,soldier,Combat Techniques,research,5,account
+Swordsman,soldier,Defence Techniques,research,8,account
+Musketeer,soldier,Combat Techniques,research,15,account
+Musketeer,soldier,Defence Techniques,research,12,account
+Cannoneer,soldier,Defence Techniques,research,12,account
+Cannoneer,soldier,Combat Techniques,research,40,account
+Cannoneer,soldier,Writing,research,35,account
+Knight,soldier,Combat Techniques,research,40,account
+Knight,soldier,Defence Techniques,research,20,account
+Knight,soldier,Writing,research,35,account
+Watchtower,installation,Castle,building,1,island
+Watchtower,installation,Defence Techniques,research,1,account
+Catapult,installation,Castle,building,5,island
+Catapult,installation,Combat Techniques,research,12,account
+Coastal gun,installation,Castle,building,10,island
+Coastal gun,installation,Combat Techniques,research,12,account
+Cannon tower,installation,Castle,building,15,island
+Cannon tower,installation,Combat Techniques,research,45,account
+Cannon tower,installation,Defence Techniques,research,45,account
+Water blockade,installation,Royal Defence,research,10,account
+Water blockade,installation,Royal Attack,research,10,account
